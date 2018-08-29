@@ -154,7 +154,7 @@
   padding: 130px 0px 160px 0px;
 }
 .product .growth-duck {
-  width: 55%;
+  width: 57%;
   margin: auto;
 }
 .product .egg-bg {
@@ -272,14 +272,6 @@
 }
 .product .birds .product__big-duck {
   float: left;
-}
-.product .types-bird h1 {
-  position: relative;
-  color: #2e4265;
-  font-family: "Work Sans";
-  font-size: 163px;
-  font-weight: 700;
-  opacity: 0.3;
 }
 
 @font-face {
