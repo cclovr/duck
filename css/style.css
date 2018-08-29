@@ -151,7 +151,11 @@
 .product {
   position: relative;
   overflow: hidden;
-  padding: 65px 160px;
+  padding: 130px 0px 160px 0px;
+}
+.product .growth-duck {
+  width: 55%;
+  margin: auto;
 }
 .product .egg-bg {
   position: absolute;
@@ -163,6 +167,119 @@
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+}
+.product .egg-bg .egg-img {
+  width: 310px;
+}
+.product h1 {
+  font-family: "Work Sans";
+  color: #2e4265;
+  opacity: 0.04;
+  font-weight: 700;
+  font-size: 175px;
+  position: relative;
+  z-index: 0;
+  top: -40px;
+  line-height: 0;
+}
+.product .growth-time {
+  position: relative;
+}
+.product .growth-time span {
+  font-family: "Work Sans";
+  font-size: 26px;
+  font-weight: 300;
+  color: #2e4265;
+  left: 200px;
+  top: 10px;
+  position: relative;
+}
+.product .growth-time .gorisontal-line {
+  width: 780px;
+  height: 4px;
+  background-color: #2e4265;
+  position: absolute;
+}
+.product .growth-time .vertical-line-start {
+  height: 40px;
+  width: 4px;
+  top: -40px;
+  background-color: #2e4265;
+  position: absolute;
+}
+.product .growth-time .vertical-line-start p {
+  position: relative;
+  color: #2e4265;
+  font-family: "Work Sans";
+  font-size: 63px;
+  font-weight: 700;
+  top: 25px;
+  left: -50px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.product .growth-time .vertical-line-middle {
+  height: 20px;
+  width: 4px;
+  left: 390px;
+  top: -20px;
+  background-color: #2e4265;
+  position: absolute;
+}
+.product .growth-time .vertical-line-middle p {
+  position: relative;
+  color: #2e4265;
+  font-family: "Work Sans";
+  font-size: 63px;
+  font-weight: 700;
+  top: -70px;
+  left: -30px;
+}
+.product .growth-time .vertical-line-end {
+  height: 40px;
+  width: 4px;
+  left: 776px;
+  top: -40px;
+  background-color: #2e4265;
+  position: absolute;
+}
+.product .growth-time .vertical-line-end p {
+  position: relative;
+  color: #2e4265;
+  font-family: "Work Sans";
+  font-size: 63px;
+  font-weight: 700;
+  top: 25px;
+  left: 45px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.product .birds {
+  margin-top: 36px;
+}
+.product .birds .product__egg {
+  float: left;
+  margin-right: 100px;
+}
+.product .birds .product__duckling {
+  float: left;
+}
+.product .birds .product__big-duck {
+  float: left;
+}
+.product .types-bird h1 {
+  position: relative;
+  color: #2e4265;
+  font-family: "Work Sans";
+  font-size: 163px;
+  font-weight: 700;
+  opacity: 0.3;
 }
 
 @font-face {
