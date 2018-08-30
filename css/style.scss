@@ -12,8 +12,34 @@ $red: #d68c6f;
 $blue: #2e4265;
 $white: #fff;
 $bg: #e4ddcf;
+$bg-price: #f3f3f3;
 
-
+.odred-button {
+    background-color: $red;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    color: $white;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    padding: 20px 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.h2 {
+   color: $blue;
+    font-family: 'Work Sans';
+    font-size: 63px;
+    font-weight: 700;
+}
+.p {
+    color: $grey;
+    font-family: 'Open Sans';
+    font-size: 16px;  
+    margin-bottom: 40px;
+    line-height: 26px;
+    font-weight: 700;
+}
 
 /*////////////HEADER////////////////*/
 
@@ -202,22 +228,10 @@ $bg: #e4ddcf;
             line-height: 75px;
         }
         p {
-            color: $grey;
-            font-family: 'Open Sans';
-            font-size: 16px;  
-            margin-bottom: 40px;
-            line-height: 26px;
+            @extend .p;
         }
         button {
-            background-color: $red;
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-            border-radius: 28px;
-            color: $white;
-            font-family: 'Work Sans';
-            font-size: 18px;
-            padding: 20px 50px;
-            border: none;
-            cursor: pointer;
+            @extend .odred-button;
         }
     }
     .duck-home {
@@ -327,7 +341,7 @@ $bg: #e4ddcf;
             position: relative;
         }
         .gorisontal-line {
-            width: 780px;
+            width: 100%;
             height: 4px;
             background-color: $blue;
             position: absolute;
@@ -356,8 +370,8 @@ $bg: #e4ddcf;
         .vertical-line-middle {
             height: 20px;
             width: 4px;
-            left: 390px;
-            top:  -20px;;
+            left: 50%;
+            top:  -20px;
             background-color: $blue;
             position: absolute;
             p {
@@ -373,7 +387,7 @@ $bg: #e4ddcf;
         .vertical-line-end {
             height: 40px;
             width: 4px;
-            left: 776px;
+            left: 100%;
             top: -40px;
             background-color: $blue;
             position: absolute;
@@ -398,16 +412,236 @@ $bg: #e4ddcf;
         .product__egg {
             float: left;
             margin-right: 100px;
+            width: 20%;
+            img {
+                width: 100%;
+            }
         }
         .product__duckling {           
             float: left;
+            width: 25%;
+            img {
+                width: 100%;
+            }
         }
         .product__big-duck {
-            float: left;
+            float: right;
+            width: 38%;
+            img {
+                width: 100%;
+            }
         }
     }
+    .types-birds {
+            width: 85%;
+            margin: auto;
+            padding-top: 132px;
+        .description {
+            float: left;
+            
+            width: 45%;
+            margin-bottom: 130px;
+        }
+        .description-end {
+            float: right;
+            width: 45%;
+            margin-bottom: 130px;
+        }
+        h1 {
+            position: relative;
+            top: 10px;
+            color: $blue;
+            font-family: 'Work Sans';
+            font-size: 163px;
+            font-weight: 700;
+            opacity: 0.1;
+            
+        }
+        h2 {
+            @extend .h2;
+            margin-bottom: 6px;
+        }
+        p {
+            @extend .p;
+        }
+        .line-h2 {
+            width: 242px;
+            height: 20px;
+            border-radius: 50%;
+            filter: blur(5px);
+            background-color: $blue;
+            opacity: 0.4;
+            margin-top: 13px;
+        }
+        
+    }
+    .bg-duckling {
+        position: absolute;
+        top: 130px;
+        left: 1310px;
+        filter: blur(5px);
+        img {
+            width: 460px;
+        }
+    }
+}
 
+/*/////////////////SECTION SUBSCRIBE////////*/
 
+.subscribe {
+    position: relative;
+    padding: 45px 0px;
+    background-color: $bg;
+    overflow: hidden;
+    .subscribe__bg-img-left {
+        position: absolute;
+        top: 40px;
+        left: -90px;
+        filter: blur(7px);
+    }
+    .subscribe__bg-img-right{
+        position: absolute;
+        top: 40px;
+        right: -30px;
+        filter: blur(7px);
+    }
+    .subscribe__container {
+        margin-left: 35%;
+        width: 53%;
+        position: relative;
+    }
+    .subscribe__text {
+        float: left;
+        margin-top: 63px;
+        input {
+            background-color: $bg;
+            border: none;
+            color: #555;
+            outline: none;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            font-weight: 700;
+            width: 350px;
+            line-height: 40px;
+            border-bottom: 2px solid $red;
+        }
+        button {
+            font-size: 40px;
+            background-color: $red;
+            border: none;
+            display: inline-block;
+            line-height: 42px;
+            margin-left: -5px;
+            padding: 9px 14px;
+            color: $white;
+            cursor: pointer;
+            
+        }
+    }
+    h2 {
+       @extend .h2;
+        margin-bottom: 46px;
+    }
+    p {
+        @extend .p;
+        margin-bottom: 53px;
+    }
+    form {
+        float: left;
+    }
+    .subscribe-img {
+        float: right;     
+        z-index: 1;
+        img {
+            z-index: 1;
+        }
+    }
+}
+
+/*///////////////PRICE//////////////////*/
+
+.price {
+    background-color: $bg-price;
+    .price__container {
+        
+    }
+    .price__product {
+      position: relative;
+        overflow: hidden;
+    }
+    .product-bg {
+        position: absolute;
+        background-color: $white;
+        filter: blur(7px);
+        z-index: 0;
+        padding: 100px;
+    }
+    .product__container {
+        position: relative;
+        width: 70%;
+        z-index: 1;
+        margin: 80px 0px 180px 350px;
+        h2 {
+           @extend .h2;
+            margin-bottom: 46px; 
+        }
+        .price {
+            font-family: 'Work Sans';
+            font-size: 27px;
+            color: $red;
+            margin-bottom: 50px;
+            span {
+                font-size: 34px;
+                font-weight: 700;
+            }
+        }
+        p {
+            @extend .p;
+        }
+        button {
+            @extend .odred-button;
+        }
+    }
+    .price__description {
+        float: right;
+        width: 70%;
+    }
+    .product-img {
+        float: left;
+    }
+    
+}
+/*//////////////FOOTER////////*/
+
+.footer {
+    background-color: $blue;
+    padding: 30px 0px;
+    .footer__container {
+        width: 75%;
+        margin: auto;
+    }
+    span {
+        float: left;
+        opacity: 0.3;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 300;
+    }
+    nav {
+        float: right;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        a {
+            color: $white;
+            text-decoration: none;
+            font-family: "Work Sans";
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
 
 
 
@@ -436,14 +670,9 @@ $bg: #e4ddcf;
     font-style: normal;
 } 
 @font-face{
-    font-family: 'OpenSans-Light';
+    font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Light.ttf');   
     font-weight: 300;
     font-style: normal;
 }
-@font-face{
-    font-family: 'OpenSans-Light';
-    src: url('../fonts/OpenSans-Light.ttf');   
-    font-weight: normal;
-    font-style: normal;
-}
+
