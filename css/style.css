@@ -7,7 +7,7 @@
 
 /*  COLORS
 ========================================== */
-.odred-button, .header .article-home button {
+.odred-button, .price .product__container button, .header .article-home button {
   background-color: #d68c6f;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 28px;
@@ -18,6 +18,22 @@
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+.h2, .price .product__container h2, .subscribe h2, .product .types-birds h2 {
+  color: #2e4265;
+  font-family: "Work Sans";
+  font-size: 63px;
+  font-weight: 700;
+}
+
+.p, .price .product__container p, .subscribe p, .product .types-birds p, .header .article-home p {
+  color: #6d6d6d;
+  font-family: "Open Sans";
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 /*////////////HEADER////////////////*/
@@ -81,13 +97,6 @@
   font-size: 60px;
   margin-bottom: 50px;
   line-height: 75px;
-}
-.header .article-home p {
-  color: #6d6d6d;
-  font-family: "Open Sans";
-  font-size: 16px;
-  margin-bottom: 40px;
-  line-height: 26px;
 }
 .header .duck-home {
   float: right;
@@ -312,17 +321,7 @@
   opacity: 0.1;
 }
 .product .types-birds h2 {
-  color: #2e4265;
-  font-family: "Work Sans";
-  font-size: 63px;
-  font-weight: 700;
-}
-.product .types-birds p {
-  color: #6d6d6d;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 30px;
+  margin-bottom: 6px;
 }
 .product .types-birds .line-h2 {
   width: 242px;
@@ -395,17 +394,9 @@
   cursor: pointer;
 }
 .subscribe h2 {
-  color: #2e4265;
-  font-family: "Work Sans";
-  font-size: 60px;
-  font-weight: 700;
   margin-bottom: 46px;
 }
 .subscribe p {
-  color: #6d6d6d;
-  font-family: "Open Sans";
-  font-style: 18px;
-  font-weight: 700;
   margin-bottom: 53px;
 }
 .subscribe form {
@@ -436,14 +427,60 @@
 }
 .price .product__container {
   position: relative;
+  width: 70%;
   z-index: 1;
-  margin-left: 50px;
+  margin: 80px 0px 180px 350px;
+}
+.price .product__container h2 {
+  margin-bottom: 46px;
+}
+.price .product__container .price {
+  font-family: "Work Sans";
+  font-size: 27px;
+  color: #d68c6f;
+  margin-bottom: 50px;
+}
+.price .product__container .price span {
+  font-size: 34px;
+  font-weight: 700;
 }
 .price .price__description {
   float: right;
+  width: 70%;
 }
 .price .product-img {
   float: left;
+}
+
+/*//////////////FOOTER////////*/
+.footer {
+  background-color: #2e4265;
+  padding: 30px 0px;
+}
+.footer .footer__container {
+  width: 75%;
+  margin: auto;
+}
+.footer span {
+  float: left;
+  opacity: 0.3;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer nav {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.footer nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @font-face {
