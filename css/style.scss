@@ -411,7 +411,7 @@ $bg-price: #f3f3f3;
         margin-top: 36px;
         .product__egg {
             float: left;
-            margin-right: 100px;
+            margin-right: 10%;
             width: 20%;
             img {
                 width: 100%;
@@ -490,7 +490,6 @@ $bg-price: #f3f3f3;
 
 .subscribe {
     position: relative;
-    padding: 45px 0px;
     background-color: $bg;
     overflow: hidden;
     .subscribe__bg-img-left {
@@ -506,13 +505,13 @@ $bg-price: #f3f3f3;
         filter: blur(7px);
     }
     .subscribe__container {
-        margin-left: 35%;
-        width: 53%;
+        margin-left: 25%;
+        width: 63%;
+        margin-top: 63px;
         position: relative;
     }
     .subscribe__text {
         float: left;
-        margin-top: 63px;
         input {
             background-color: $bg;
             border: none;
@@ -580,7 +579,8 @@ $bg-price: #f3f3f3;
         position: relative;
         width: 70%;
         z-index: 1;
-        margin: 80px 0px 180px 350px;
+        margin: 90px 0px 160px 0px;
+        margin-left: 20%;
         h2 {
            @extend .h2;
             margin-bottom: 46px; 
