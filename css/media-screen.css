@@ -1,0 +1,18 @@
+@media (max-width: 1060px) {
+    .subscribe .subscribe-img {
+        display: none;
+    }
+    .subscribe__container {
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    
+}
+@media (max-width: 800px) {
+    .duck-home {
+        display: none;
+    }
+    .header__home .article-home {
+        width: 100%;
+    }
+}
