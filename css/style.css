@@ -55,7 +55,7 @@
   line-height: 60px;
 }
 .header .burger-container {
-  width: 60%;
+  width: 80%;
   float: right;
 }
 .header *,
@@ -124,7 +124,8 @@
 }
 
 .burger-menu {
-  width: auto;
+  width: 81%;
+  float: right;
   margin-top: 0;
   line-height: 60px;
   height: 0;
