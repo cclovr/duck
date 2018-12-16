@@ -1,7 +1,3 @@
-html, body {
-    overflow-x: hidden;
-}
-
 /*//////////////GLOBAL/////////////////*/
 .clearfix:after {
   content: "";
@@ -13,7 +9,6 @@ html, body {
 ========================================== */
 .odred-button, .price .product__container button, .article-home button {
   background-color: #d68c6f;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 28px;
   color: #fff;
   font-family: "Work Sans";
@@ -23,15 +18,18 @@ html, body {
   cursor: pointer;
   outline: none;
 }
+.odred-button:hover, .price .product__container button:hover, .article-home button:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
 
-.h2, .price .product__container h2, .subscribe h2, .product .types-birds h2 {
+.h2, .price .product__container h2, .subscribe h2, .types-birds h2 {
   color: #2e4265;
   font-family: "Work Sans";
   font-size: 63px;
   font-weight: 700;
 }
 
-.p, .price .product__container p, .subscribe p, .product .types-birds p, .article-home p {
+.p, .price .product__container p, .subscribe p, .types-birds p, .article-home p {
   color: #6d6d6d;
   font-family: "Open Sans";
   font-size: 16px;
@@ -45,22 +43,16 @@ html, body {
   background-color: #e4ddcf;
   position: relative;
   overflow: hidden;
-}
-.header-top-container {
   padding-top: 42px;
 }
 .header-top {
   width: 80%;
   margin: 0 auto;
-}
-.header .logo {
-  display: inline-block;
-  float: left;
-  line-height: 60px;
+  display: flex;
+  align-items: center;
 }
 .header .burger-container {
   width: 80%;
-  float: right;
 }
 .header *,
 .header *:before,
@@ -132,6 +124,8 @@ html, body {
   float: right;
   margin-top: 0;
   line-height: 60px;
+  display: flex;
+  align-items: center;
   height: 0;
   overflow: hidden;
 }
@@ -171,16 +165,13 @@ html, body {
 }
 
 .header__home {
-  padding: 84px 0px 50px 0px;
-  width: 75%;
-  margin: 0 auto;
+  margin: 84px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .article-home {
-  float: left;
   width: 45%;
-  position: relative;
-  z-index: 2;
 }
 .article-home h1 {
   font-family: "DroidSerif-Bold";
@@ -256,7 +247,7 @@ html, body {
 .product {
   position: relative;
   overflow: hidden;
-  padding: 130px 0px 160px 0px;
+  padding-top: 130px;
 }
 .product .growth-duck {
   width: 57%;
@@ -390,42 +381,6 @@ html, body {
 .product .birds .product__big-duck img {
   width: 100%;
 }
-.product .types-birds {
-  width: 85%;
-  margin: auto;
-  padding-top: 132px;
-}
-.product .types-birds .description {
-  float: left;
-  width: 45%;
-  margin-bottom: 130px;
-}
-.product .types-birds .description-end {
-  float: right;
-  width: 45%;
-  margin-bottom: 130px;
-}
-.product .types-birds h1 {
-  position: relative;
-  top: 10px;
-  color: #2e4265;
-  font-family: "WorkSans";
-  font-size: 163px;
-  font-weight: 700;
-  opacity: 0.1;
-}
-.product .types-birds h2 {
-  margin-bottom: 6px;
-}
-.product .types-birds .line-h2 {
-  width: 242px;
-  height: 20px;
-  border-radius: 50%;
-  filter: blur(5px);
-  background-color: #2e4265;
-  opacity: 0.4;
-  margin-top: 13px;
-}
 .product .bg-duckling {
   position: absolute;
   top: 130px;
@@ -436,11 +391,52 @@ html, body {
   width: 460px;
 }
 
+.types-birds {
+  width: 85%;
+  margin: auto;
+  padding-top: 132px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.types-birds .description {
+  float: left;
+  width: 45%;
+  margin-bottom: 130px;
+}
+.types-birds .description-end {
+  float: right;
+  width: 45%;
+  margin-bottom: 130px;
+}
+.types-birds h1 {
+  position: relative;
+  top: 10px;
+  color: #2e4265;
+  font-family: "WorkSans";
+  font-size: 163px;
+  font-weight: 700;
+  opacity: 0.1;
+}
+.types-birds h2 {
+  margin-bottom: 6px;
+}
+.types-birds .line-h2 {
+  width: 242px;
+  height: 20px;
+  border-radius: 50%;
+  filter: blur(5px);
+  background-color: #2e4265;
+  opacity: 0.4;
+  margin-top: 13px;
+}
+
 /*/////////////////SECTION SUBSCRIBE////////*/
 .subscribe {
   position: relative;
   background-color: #e4ddcf;
   overflow: hidden;
+  padding: 20px;
 }
 .subscribe .subscribe__bg-img-left {
   position: absolute;
@@ -455,13 +451,14 @@ html, body {
   filter: blur(7px);
 }
 .subscribe .subscribe__container {
-  margin-left: 25%;
-  width: 63%;
-  margin-top: 63px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .subscribe .subscribe__text {
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .subscribe .subscribe__text input {
   background-color: #e4ddcf;
@@ -492,11 +489,7 @@ html, body {
 .subscribe p {
   margin-bottom: 53px;
 }
-.subscribe form {
-  float: left;
-}
 .subscribe .subscribe-img {
-  float: right;
   z-index: 1;
 }
 .subscribe .subscribe-img img {
@@ -552,8 +545,10 @@ html, body {
   padding: 30px 0px;
 }
 .footer .footer__container {
-  width: 75%;
+  width: 80%;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 .footer span {
   float: left;
@@ -564,7 +559,6 @@ html, body {
   font-weight: 300;
 }
 .footer nav {
-  float: right;
   display: flex;
   justify-content: space-between;
   width: 40%;
@@ -594,6 +588,80 @@ html, body {
   src: url("../fonts/OpenSans-Light.ttf");
   font-weight: 300;
   font-style: normal;
+}
+@media (max-width: 1150px) {
+  .header__home .duck-bg-blur {
+    display: none;
+  }
+
+  .subscribe .subscribe-img {
+    display: none;
+  }
+
+  .footer .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer nav {
+    width: 80%;
+  }
+  .footer span {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 915px) {
+  .header-top {
+    flex-direction: column;
+  }
+  .header-top .logo {
+    margin-bottom: 40px;
+  }
+
+  .burger-container label {
+    display: none;
+  }
+  .burger-container .burger-menu {
+    overflow: visible;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .product .egg-bg {
+    display: none;
+  }
+  .product .h1-bg {
+    display: none;
+  }
+  .product .growth-time {
+    display: none;
+  }
+  .product .birds {
+    display: none;
+  }
+
+  .types-birds {
+    flex-direction: column;
+  }
+  .types-birds .description {
+    width: 100%;
+  }
+
+  .product__container .price__description {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .duck-home {
+    display: none;
+  }
+
+  .header__home .article-home {
+    width: 100%;
+  }
+
+  .subscribe__bg {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
